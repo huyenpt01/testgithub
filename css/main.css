@@ -1,0 +1,248 @@
+/* @import url('https://fonts.google.com/specimen/Patrick+Hand?subset=vietnamese&preview.size=43#standard-styles'); */
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family:  monospace;
+	font-size: 1.15rem;
+	color: rgb(255, 255, 255);
+	background-color: rgba(226, 213, 217, 0.082) !important;
+    transition: 0.4s;
+}
+
+.navbar {
+	background-color: #24A8AD !important;
+}
+.navbar li a {
+    color: white !important;
+}
+.navbar li a:hover {
+    color: black !important;
+}
+.container-fluid {
+    height: auto;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form-control {
+    width: 40em;
+    height: 77%;
+    font-size: 18px;
+    color: rgb(19, 80, 70);
+    padding-left: 1em;
+    border-color: rgb(105, 156, 118);
+    margin-top: 2%;
+    border-radius: 1%;
+}
+.btn {
+    width: 7%;
+    height: 67%;
+    margin-top: 2.25%;
+    margin-right: 25%;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-left: -7.8%;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(81, 187, 182, 0.658);
+    border-radius: 1%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+}
+.btn:hover{
+	color: rgba(73, 179, 173, 0.788);
+	background-color: rgba(196, 230, 225, 0.315);
+    border-color: rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+.header__cart {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-right: 19%;
+    margin-left: -22%;
+    padding-top: 1%;
+}
+.fa, .fas {
+    font-weight: 900;
+	padding-top: 16px;
+}
+.menubar{
+	border: 2px double #03453d !important;
+}
+.menubar a{
+	color: #24A8AD !important;
+	
+}
+.menubar a:hover{
+	color: #ffffff !important;
+	background-color: rgb(30, 155, 144)
+}
+.carousel-inner img {
+	width: 100%;
+	height: 600px;
+	padding: center;
+}
+.carousel-caption {
+	position: absolute;
+	top: 50%;
+}
+.carousel-inner {
+    position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.slidedau{
+	width: 70%;
+	margin-left: 15%;
+}
+.carousel-control button{
+	background-color: rgba(233, 215, 220, 0.11) ;
+}
+.danhmucsanpham{
+	background-color: rgba(233, 215, 220, 0.11) ;
+}
+
+.sanpham img {
+    width: 100%;
+    height: 14em;
+}
+.sanpham-thongtin {
+    font-size: 17px !important;
+    height: 6em;
+}
+.anh-mucsp {
+	width: 100%;
+	height: 8em;
+	text-align: center;
+	margin-top: 1%;
+	
+}
+.anh-mucsp img {
+	width: 70%;
+	height: 100%;
+	
+	}
+.sanphamhome{
+	border: 2px double rgba(162, 221, 218, 0.829);
+	width: 70%;
+	margin-left: 15%;
+	display: flex;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-top: 1%;
+}
+.sanpham{
+	border: 2px double rgba(162, 221, 218, 0.829);
+	width: 70%;
+	width: 23%;
+	height: 90%;
+	text-align: center;
+	margin: auto;
+
+}
+.sanpham p{
+	color: #03453d;
+}
+.sanpham img{
+	width: 100%;
+	height: 13em;
+}
+.sanpham img:hover{
+	transform: scale(0.9);
+	opacity:0.8;
+}
+.ke-ngang{
+	margin-top: 4%;
+	border: 0.1px solid rgb(182, 174, 174);
+	width: 65%;
+	height: 0px;
+	display: flex;
+	margin-left: 15%;
+}
+.ke a{
+	margin-top: 2.4%;
+}
+ a:hover{
+	text-decoration: none;
+	color: rgb(15, 15, 15);
+	padding-top: 15px;
+}
+
+.ke{
+	display: flex;
+}
+a{
+	color: rgb(33, 163, 142);
+	text-decoration: none;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    z-index: 3;
+    border-top: 5px solid #ccc;
+	background-color: #04797956 !important;
+	margin-top: 1%;
+}
+#footer a{
+    color: #020c3a !important;
+	
+}
+#footer a:hover{
+    color: #ffffff !important;
+	padding-top: 3px;
+}
+.footerContent {
+    margin: 0 auto;
+    width: 80%;
+    padding: 0 10px;
+	color: #020c3a;
+   display: flex;
+   
+}
+.lowerFooter {
+    min-height: 70px;
+    padding: 35px 0px 25px 0px;
+}
+ .first {
+    margin-right: 0;
+    padding: 0;
+    border: none;
+    width: 26%;
+}
+#footer .column3 {
+    float: left;
+    margin: 25px 1% 25px 1%;
+    width: 34%;
+    padding: 0;
+    vertical-align: top;
+}
+#lowerFooter {
+	background-color: #24a8adda;
+    min-height: 70px;
+    padding: 35px 0px 25px 0px;
+}
+.footerContent {
+    margin: 0 auto;
+    width: 1004px;
+    padding: 0 10px;
+   
+}
+#footer #lowerFooter p { 
+    float: right;
+    padding: 10px 0px 0px 0px;
+    text-align: right;   
+    width: 75%;
+  
+}

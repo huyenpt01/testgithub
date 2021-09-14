@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lua's Beauty</title>
+	<!-- Import Boostrap css, js, font awesome here -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href=".\css\main.css" rel="stylesheet">
+	<link href=".\themify-icons\themify-icons.css" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+<!-- Navigation -->
+<div>
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-branch" href="#">
+				<img src=".\images\logo.png" height="60px">
+			</a>
+			<!-- <input class="search-sp" type="text" value="Hãy nhập gì đó để tìm kiếm!!" > -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" 
+				data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				
+				<ul class="navbar-nav ml-auto">	
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="Nhập tên sản phẩm bạn muốn tìm kiểm!!" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">
+							<i class="search-icon ti-search"></i>
+						</button>
+						<ion-icon name="cart-outline"></ion-icon>
+
+						<div class="header__cart">
+							<div class="header__cart-wrap">
+								<i class="fas fa-shopping-cart header__cart-icon"></i>
+								<div class="header__cart-list">
+									<!-- no cart: header__cart-list--no-cart -->
+									<img src="assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+								
+								</div>
+							</div>
+						</div>		
+					  </form>	
+					 
+					<li class="nav-item">
+						<a class="nav-link" href="#">Đăng ký/Đăng nhập</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="menubar">
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="#">Tất cả sản phẩm</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Chống nắng</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Bodycare</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Skincare</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Chăm sóc tóc</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Son hottrend</a>
+			  </li>
+		  </ul>
+	</div>
+</div>
+<!-- Carousel -->
+
+<div class="slidedau">
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+		</div>
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src=".\images\lua2.png">		
+		  </div>
+		  <div class="carousel-item">
+			<img src=".\images\lua3.png">	
+		  </div>
+		  <div class="carousel-item">
+			<img src=".\images\lua4.png">	
+		  </div>
+		  <div class="carousel-item">
+			<img src=".\images\lua5.png">		
+		  </div>
+		</div>
+	
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+</div>
+
+
+<!-- Content -->
+<div class="danhmucsanpham">
+	<div class="anh-mucsp">
+		<img src=".\images\sanphamchaynhat.png">
+	</div>
+	<div class="ke">
+		<div class="ke-ngang"></div>
+		<a href="#">Xem tất cả ></a>
+	</div>
+	<div class="sanphamhome">
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\kem-chong-nang-vichy.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Kem chống nắng Vichy</a>
+				<p>350.000 đ</p>
+			</div>
+		</div>
+		
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\xit-chong-nang-anessa.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Xịt chống nắng Anessa</a>
+				<p>320.000 đ</p>
+			</div>
+		</div>
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\ke-mat-nuoc-silkygirl.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Kẻ mắt nước Silkygirl</a>
+				<p>150.000 đ</p>
+			</div>
+		</div>		
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\phan-mat-the-blushed.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Phấn mắt The Blushed</a>
+				<p>420.000 đ</p>
+			</div>
+		</div>		
+	</div>
+
+	<div class="anh-mucsp">
+		<img src=".\images\sanphamchongnang.png">
+	</div>
+	<div class="ke">
+		<div class="ke-ngang"></div>
+		<a href="#">Xem tất cả ></a>
+	</div>
+	<div class="sanphamhome">
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\kem-chong-nang-skin-aqua.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Kem chống nắng Skin Aqua</a>
+				<p>180.000 đ</p>
+			</div>
+		</div>
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\xit-chong-nang-la-roche.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Xịt chống nắng La-Roche Posay</a>
+				<p>370.000 đ</p>
+			</div>
+		</div>
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\kem-chong-nang-cell.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Kem chống nắng Cell</a>
+				<p>380.000 đ</p>
+			</div>
+		</div>
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\kem-chong-nang-la-roche.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Kem chống nắng La-Roche Posay</a>
+				<p>370.000 đ</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="anh-mucsp">
+		<img src=".\images\sanphamskincare.png">
+	</div>
+	<div class="ke">
+		<div class="ke-ngang"></div>
+		<a href="#">Xem tất cả ></a>
+	</div>
+	<div class="sanphamhome">
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\duong-mi-eveline.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Dưỡng mi dài Eveline</a>
+				<p>105.000 đ</p>
+			</div>
+		</div>
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\gel-rua-mat-la-roche.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Gel rửa mặt La-Roche Posay</a>
+				<p>520.000 đ</p>
+			</div>
+		</div>
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\serrum-cap-am-eucerin.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Serum cấp ẩm Eucerin</a>
+				<p>880.000 đ</p>
+			</div>
+		</div>
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\nuoc-tay-trang-cocoon.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Nước tẩy trang Cocoon</a>
+				<p>280.000 đ</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="anh-mucsp">
+		<img src=".\images\sanphamsonhot.png">
+	</div>
+	<div class="ke">
+		<div class="ke-ngang"></div>
+		<a href="#">Xem tất cả ></a>
+	</div>
+	<div class="sanphamhome">
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\son-romad.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Son kem Romand</a>
+				<p>155.000 đ</p>
+			</div>
+		</div>
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\son-thoi-mac.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Son Thỏi MAC</a>
+				<p>580.000 đ</p>
+			</div>
+		</div>
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\Son-dior.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Son kem Dior</a>
+				<p>630.000 đ</p>
+			</div>
+		</div>
+		<div class="sanpham">
+			<div class="sanpham-anh">
+				<img src=".\images\Son-merzy.png">
+			</div>
+			<div class="sanpham-thongtin">
+				<a href="#">Som kem Merzy vỏ xanh</a>
+				<p>200.000 đ</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+	<div class="footerContent">
+		<div class="column3 first">
+			<span class="h3">Địa điểm</span>
+			<p><strong>Trường Đại học Điện lực</strong><br>
+			<a href="#"><span id="lbAddress">235 Hoàng Quốc Việt, Bắc Từ Liêm</span></a><br>
+			<span id="lbLocation">P.A109</span><br>
+			<strong>Số điện thoại: </strong><span id="lbPhoneNumber">(024) 22185713</span></p>
+		</div>
+		<div class="column3" style="text-align: center; overflow:hidden;">
+			<iframe width="340" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=%C4%90%E1%BA%A1i%20h%E1%BB%8Dc%20%C4%90i%E1%BB%87n%20l%E1%BB%B1c&amp;key=AIzaSyCoeWmD_Ydigl2hH7cXHVFSHG0xKrgN9H0" allowfullscreen=""></iframe>
+		</div>
+		<div class="column3 siteindex last" style="text-align: center; overflow:hidden;">
+			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcnttepu%2F&amp;tabs=timeline&amp;width=340&amp;height=200&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=1679631165650233" width="340" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		</div>
+		<br class="float_clear">
+	</div>
+
+	<div id="lowerFooter">
+		<div class="footerContent"> 
+			<p style="float:left; width: 30%; text-align: left;">
+				<span>Số lượt truy cập: <span id="lbAccessNumber">184730</span></span><br>
+				<span style="display: block; margin-top: 10px;">Online: <span id="lbOnline">5</span></span>
+			</p>
+
+			<p>
+				<a href="#">Privacy Policy   </a> 
+				<a href="#">Legal Disclaimer</a>
+			</br>
+			<span id="directedit"><a id="de" href="#">©</a></span> 2018 Khoa Công Nghệ Thông Tin - Đại học Điện Lực
+			</p>		
+			
+			<br class="float_clear">
+		</div>
+	</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>

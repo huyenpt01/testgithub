@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lua's Beauty</title>
+	<!-- Import Boostrap css, js, font awesome here -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href=".\css\main.css" rel="stylesheet">
+	<link href=".\css\tat-ca-san-pham.css" rel="stylesheet">
+	<link href=".\themify-icons\themify-icons.css" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+<!-- Navigation -->
+<div>
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-branch" href="#">
+				<img src=".\images\logo.png" height="50px">
+			</a>
+			<!-- <input class="search-sp" type="text" value="Hãy nhập gì đó để tìm kiếm!!" > -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" 
+				data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				
+				<ul class="navbar-nav ml-auto">	
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="Nhập tên sản phẩm bạn muốn tìm kiểm!!" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">
+							<i class="search-icon ti-search"></i>
+						</button>
+						<ion-icon name="cart-outline"></ion-icon>
+
+						<div class="header__cart">
+							<div class="header__cart-wrap">
+								<i class="fas fa-shopping-cart header__cart-icon"></i>
+								<div class="header__cart-list">
+									<!-- no cart: header__cart-list--no-cart -->
+									<img src="assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+								
+								</div>
+							</div>
+						</div>		
+					  </form>	
+					 
+					<li class="nav-item-login">
+						<a class="nav-link" href="#">Đăng ký/đăng nhập</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+</div>
+
+<!-- Content -->
+<div class="content">
+	<div class="main">
+		<div class="ben-trai">
+			<div class="ben-trai1">
+				<nav class="catenogy">
+					<b class="catenogy__heading">
+						<i class="fas fa-list	"></i>
+						Danh mục Shop
+					</b>
+					<ul class="catenogy-list">
+						<li class="catenogy-item catenogy-item--active">
+							<a href="#" class="catenogy-item--link" >Tất cả sản phẩm</a>
+						</li>
+						<li class="catenogy-item ">
+							<a href="#" class="catenogy-item--link" >Chăm sóc mặt</a>
+						</li>
+						<li class="catenogy-item ">
+							<a href="#" class="catenogy-item--link" >Chăm sóc tóc</a>
+						</li>
+						<li class="catenogy-item ">
+							<a href="#" class="catenogy-item--link" >Chống nắng</a>
+						</li>
+						<li class="catenogy-item ">
+							<a href="#" class="catenogy-item--link" >Son thỏi</a>
+						</li>
+						<li class="catenogy-item ">
+							<a href="#" class="catenogy-item--link" >Son kem</a>
+						</li>
+						<li class="catenogy-item ">
+							<a href="#" class="catenogy-item--link" >Son dưỡng</a>
+						</li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		<div class="ke-doc"></div>
+		<div class="ben-phai">
+			<div class="home-filter">
+				<span class="home-filer_lable">Sắp xếp theo</span>
+				<button class="btn-filer"	>Phổ biến</button>
+				<button class="btn-filer"	>Mới nhất</button>
+				<button class="btn-filer"	>Bán chạy</button>
+	
+				<div class="select-input">
+					<span class="select-input_label">Giá</span>
+					<i class="fas fa-angle-down"></i>
+				</div>
+				
+			</div>
+		
+			<div class="home-product">
+			</br>
+		</br>
+				<div class="grid__row">
+					<div class="grid_column_2">
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\ke-mat-nuoc-silkygirl.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Kẻ mắt nước Silky Girl</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>180.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+	
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\chai-lotion-duong-amHada-Labo.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Lotion dưỡng ẩm Hada Labo</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>290.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+	
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\duong-mi-eveline.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Dưỡng mi Eveline</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>170.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+	
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\phan-mat-the-blushed.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Phấn mắt The Blushed</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>680.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+	
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\serrum-cap-am-eucerin.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Serrum cấp ẩm Eucerin</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>880.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+					</div>	
+					
+					<div class="grid_column_2">
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\nuoc-hoa-hong-Cosrx.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Nước hoa hồng Cosrx</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>280.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+	
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\Sửa-rửa-mặt-ý-dĩ-Hatomugi-Naturie-Nhật-Bản.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Sửa rửa mặt Hatomugi Naturie </p>
+							</div>
+							<div class="home-product-item__price">
+								<span>100.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+	
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\toner-hoa-cuc-kiehls.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Toner hoa cúc kiehls</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>380.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+	
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\xit-chong-nang-la-roche.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Xịt chống nắng La Roche Posay</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>370.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+	
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\toner-xanh-bioderma.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Toner Bioderma xanh</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>180.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="grid_column_2">
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\sua-rua-mat-hadalabo.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Sữa rửa mặt Hada Labo</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>80.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+	
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\srm-La-roche.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Gel rửa mặt La Roche Posay</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>580.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+	
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\srm-innisfree.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Sữa rửa mặt Innisfree</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>185.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+	
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\son-thoi-mac.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Son thỏi MAC</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>480.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+	
+						<div class="home-product-item">
+							<div class="home-product-item__img" >	
+								<img src=".\images\son-romad.png">					
+							</div>
+							<div class="home-product-item__name">
+								<p>Son Romand</p>
+							</div>
+							<div class="home-product-item__price">
+								<span>155.000 đ</span>
+							</div>
+							<div class="rating">
+								<div class="home-product-item__action">
+									<span class="home-product-item__like">
+										<i class="far fa-heart"></i>
+										<!-- <i class="fas fa-heart"></i> -->
+									</span>
+								</div>
+								<div class="home-product-item__rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				
+			</div>
+	
+		</div>
+	</div>
+		
+</div>
+
+<!-- Footer -->
+<div id="footer">
+	<div class="footerContent">
+		<div class="column3 first">
+			<span class="h3">Địa điểm</span>
+			<p><strong>Trường Đại học Điện lực</strong><br>
+			<a href="#"><span id="lbAddress">235 Hoàng Quốc Việt, Bắc Từ Liêm</span></a><br>
+			<span id="lbLocation">P.A109</span><br>
+			<strong>Số điện thoại: </strong><span id="lbPhoneNumber">(024) 22185713</span></p>
+		</div>
+		<div class="column3" style="text-align: center; overflow:hidden;">
+			<iframe width="340" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=%C4%90%E1%BA%A1i%20h%E1%BB%8Dc%20%C4%90i%E1%BB%87n%20l%E1%BB%B1c&amp;key=AIzaSyCoeWmD_Ydigl2hH7cXHVFSHG0xKrgN9H0" allowfullscreen=""></iframe>
+		</div>
+		<div class="column3 siteindex last" style="text-align: center; overflow:hidden;">
+			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcnttepu%2F&amp;tabs=timeline&amp;width=340&amp;height=200&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=1679631165650233" width="340" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		</div>
+		<br class="float_clear">
+	</div>
+
+	<div id="lowerFooter">
+		<div class="footerContent"> 
+			<p style="float:left; width: 30%; text-align: left;">
+				<span>Số lượt truy cập: <span id="lbAccessNumber">184730</span></span><br>
+				<span style="display: block; margin-top: 10px;">Online: <span id="lbOnline">5</span></span>
+			</p>
+
+			<p>
+				<a href="#">Privacy Policy   </a> 
+				<a href="#">Legal Disclaimer</a>
+			</br>
+			<span id="directedit"><a id="de" href="#">©</a></span> 2018 Khoa Công Nghệ Thông Tin - Đại học Điện Lực
+			</p>		
+			
+			<br class="float_clear">
+		</div>
+	</div>
+
+</div>
+
+<!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your Plugin chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "101164642324306");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function() {
+	FB.init({
+	  xfbml            : true,
+	  version          : 'v11.0'
+	});
+  };
+
+  (function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+	fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
